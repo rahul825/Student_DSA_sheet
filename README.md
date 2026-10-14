@@ -1,7 +1,7 @@
 # DSA Sheet - Frontend
 
-React 19 + Material UI app for the DSA Sheet. Students can:
-
+React 19 + Material UI app for the DSA Sheet. 
+Students can:
 - **Sign up / log in** (JWT session that survives a page reload)
 - Work through a **structured sheet** of Chapters, Topics and Problems
 - Open the **YouTube, LeetCode/Codeforces and article links** for each topic and problem
@@ -11,7 +11,6 @@ React 19 + Material UI app for the DSA Sheet. Students can:
 - Use a dedicated **Study Calendar**: plan days, auto-schedule problems, mark plans done (which ticks the problem), see what was solved each day and schedule revisions
 - See a **dashboard** with overall and per-difficulty progress, streak, "where you left off", "up next" and today's plan
 
-The backend API lives in the separate Node.js project (see its `README.md` and `docs/SYSTEM_DESIGN.md`).
 
 ## Run locally
 
@@ -21,15 +20,9 @@ cp .env.example .env     # REACT_APP_API_URL=http://localhost:5000/api
 npm start                # http://localhost:3000
 ```
 
-Start the backend first (`npm run dev` in the API project).
-
 ## Build for production
 
-```bash
-REACT_APP_API_URL=https://api.example.com/api npm run build
-```
 
-Upload the `build/` folder to S3 + CloudFront (see the backend's `docs/DEPLOYMENT_AWS.md`).
 
 ## Structure
 
